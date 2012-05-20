@@ -69,6 +69,6 @@ public final class Relogio extends JFrame implements ActionListener {
     }
 
     public static void main(String args[]) {
-        RelogioErrado relogio = new RelogioErrado();
+        Relogio relogio = new Relogio();
     }
 }

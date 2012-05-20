@@ -4,6 +4,8 @@
  */
 package core;
 
+import conexao.Emissor;
+import conexao.Receptor;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;

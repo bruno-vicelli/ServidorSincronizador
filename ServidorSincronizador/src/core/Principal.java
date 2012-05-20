@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package core;
 
 import conexao.Emissor;
@@ -15,11 +11,21 @@ import java.util.logging.Logger;
 import util.DateParser;
 
 /**
+ * Classe Principal que inicializa o socket para o funcionamneto do servidor
  *
- * @author thiago
+ *
+ * @author Bruno Vicelli
+ * @author Mateus Henrique Dal Forno
+ * @author Thiago Cassio Krug
+ * @version 1.0
  */
 public class Principal {
-    
+
+    /**
+     * Metodo que inicia o servidor e cria um socket que fica aguardando
+     * conexões e recebimento de pedidos e responde com a sua hora certa
+     *
+     */
     public void inicialzarServidor() {
         DatagramSocket serverSocket;
         DatagramPacket mensagem;
@@ -42,5 +48,4 @@ public class Principal {
             Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
 }
